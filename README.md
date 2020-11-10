@@ -7,6 +7,8 @@ Here, we follow their formatting and evaluation setup.
 ## Motivation
 [Webster et al. 2018](https://arxiv.org/abs/1810.05201) observe that certain unbiased baselines obtain GAP bias scores significantly different from 1.0, the unbiased score. We identify the patterns within the dataset that cause this and propose an alternative weighted Wt-Bias metric that alleviates this data imbalance that might affect evaluated models. For details, please refer to our [paper](https://arxiv.org/abs/2011.01837).
 
+## How to use
+
 To evaluate your GAP outputs with Wt-bias metric, use the following command:    
 ```python gap_scorer.py --gold_tsv gap-test.tsv --system_tsv [your output file] --weights linear_weights_trimmed.json```     
 ```linear_weights_trimmed.json``` can be replaced with ```linear_weights.json``` to evaluate on W-bias instead.
