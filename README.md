@@ -30,4 +30,3 @@ To re-compute the weights, Python 3 and Matlab with its Linprog package are requ
     month = {February},
     year = {2021}
 }
-'''
